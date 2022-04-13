@@ -1,0 +1,787 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Физика</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+		<link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/rubiks-cube.png"/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<style>
+			h1 {
+					font-size: 3.0em !important;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+					<section class="center" data-markdown  data-separator-notes="^Note:">
+						<!-- Заглавный слайд -->
+						<script type="text/template">
+							Физика
+							==============================================
+							Note:
+							Заголовок
+						</script>
+					</section>
+
+					<!-- Слайд с определением физики -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Определение
+	
+							Фи́зика (от др.-греч. φυσική — «природный») — область естествознания:
+							наука о наиболее общих законах природы, о материи, её структуре, 
+							движении и правилах трансформации.
+							 
+							Note:
+							Понятия физики и её законы лежат в основе всего естествознания. Является точной наукой
+						</script>
+					</section>
+	
+					<!-- Продолжение определения -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Определение
+	
+							Термин «физика» впервые фигурирует в сочинениях одного из величайших мыслителей древности — Аристотеля (IV век до нашей эры).
+							Note:
+							Термин «физика» впервые появился в сочинениях одного из величайших мыслителей древности — Аристотеля, жившего в IV веке до 
+							нашей эры.
+						</script>
+					</section>
+	
+					<!-- Продолжение определения -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Определение
+	
+							Первоначально термины «физика» и «философия» были синонимами, так как в основе 
+							обеих дисциплин лежало стремление объяснить законы функционирования Вселенной.
+					
+							Note:
+							Первоначально термины «физика» и «философия» были синонимичны, поскольку обе дисциплины пытаются объяснить законы функционирования
+							Вселенной. Однако в результате научной революции XVI века физика выделилась в отдельное научное направление.
+						</script>
+					</section>
+					
+					<!-- Сколько в научном мире существует методов -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Методы
+	
+							Существуют Три метода изучения физики:
+
+							- Наблюдение
+							- Гипотеза (предположение, догадка)
+							- Эксперимент
+							Note:
+							В физике существуют разнообразные исследовательские методы изучения процессов и явлений в природе. Например: наблюдение,
+							гипотеза и эксперимент
+						</script>
+					</section>
+					
+					<!-- Пояснение, что такое наблюдение -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Наблюдение
+							
+							***Наблюдение*** осуществляется с помощью органов чувств человека, а также с помощью приборов. Например, 
+							в результате повседневных наблюдений установлено, что непрозрачные тела в солнечный день дают тень. 
+							На основе дальнейших наблюдений были накоплены факты, говорящие о том, 
+							что размеры тени изменяются в течение дня. Ее длина самая большая утром и вечером, а самая малая — в полдень.
+							
+							Note:
+							Наблюдение осуществляется с помощью органов чувств человека, а также с помощью приборов. Далее выдвигается гипотеза
+						</script>
+					</section>
+					
+					<!-- Здесь мы вставляем картинку с деревом -->
+					<section data-separator-notes="^Note:">
+					<div class="derevo">
+						<img src="image/деревья.jpg">
+						<p>Тень дерева в разные периоды дня</p>
+					</div>
+					<section data-markdown="">
+						Note:
+						Картинка с деревом
+					</section>
+					
+					</section>
+
+					<!-- Пояснение гипотизы -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Гипотеза
+							
+							***Гипотеза*** объясняет известные факты и предсказывает новые, еще неизвестные. В рассмотренном примере гипотеза 
+							состоит в том, что свет распространяется прямолинейно. Гипотеза иногда может быть и ошибочной, неверной. Тогда выдвигается новая гипотеза.
+							Или же, что могут образовываться тень и полутень, если источников света несколько или источник один, но он большой 
+							(его размеры сравнимы с расстоянием до непрозрачного предмета, дающего тень).
+							
+							Note:
+							В случае, если гипотеза о ходе физических процессов будет доказана, она превращается в физический закон.
+						</script>
+					</section>
+		
+					<!-- Пояснение эксперимента -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Эксперимент
+							
+							***Эксперимент***, проводимые с двумя источниками света (рис. 14) и с одним источником больших размеров (рис. 15), 
+							показали, что размеры тени, а также наличие тени и полутени полностью подтверждают гипотезу о прямолинейном распространении света.
+							Если гипотеза подтвердилась, то она становится законом.
+							
+							Note:
+							Во время проведения эксперимента невозможно полностью исключить влияние внешнего воздействия. Несмотря на это, по полученным данным 
+							возможно предсказать результат эксперимента в идеальных условиях
+						</script>
+					</section>
+
+					<!-- Иллюстрация с картинкой -->
+					<section data-separator-notes="^Note:" data-menu-title="свет">
+						<img src="image/свет.png" alt="свет">
+						<p>Иллюстрация прямолинейности света</p>
+						<section data-markdown="">
+							Note:
+							Иллюстрация прямолинейного дейсвия света 
+						</section>
+					</section>
+
+					<!-- Заклавный слайд с единицами измерений -->
+					<section class="center" data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							Единицы измерений
+							-------------------------
+							Note:
+							Заголовок
+						</script>
+					</section>
+
+					<!-- Введение в скорость -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Скорость
+	
+							Скорость в механике, одна из основных кинематических характеристик движения точки, равная численно при равномерном 
+							движении отношению пройденного пути $S$ к промежутку времени $t$, за который этот путь пройден, т. е. 
+							$V =\tfrac{S}{t}$. В общем случае $V=\tfrac{dr}{dt}$, а как вектор $V = \tfrac{dr}{dt}$, где r — радиус-вектор точки.
+							
+							Note:
+							Скорость - это физическая величина, характеризующая быстроту измерения положения точки в пространстве
+						</script>
+					</section>
+
+					<!-- Факты о скорости -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							##### Занимательные факты о скорости: 
+	
+							- Cкорость стрижей, голубей и куликов может достигать 300 км/ч.
+							- Когда самолёт развивает скорость 1000 км/ч, то его длина увеличивается на один сантиметр односительно длины его покоя.
+							- Самое ветреное место – Земля Виктории, находящаяся в Антарктиде. Скорость ветра здесь доходит до 215 км/ч.
+							- Самая большая скорость чтения – 416 250 слов в минуту. Рекордсмен – Евгения Алексеенко.
+							- Самая большая скорость воспроизведения потомства у человека – 58 детей в год. 
+							Note:
+							Небольшие забавные фактики о скорости
+						</script>
+					</section>
+	
+					<!-- Определение температуры -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Температура
+	
+							Температура (temperatura — нормальное состояние) — скалярная физическая величина, характеризующая термодинамическую систему и 
+							количественно выражающая интуитивное понятие о различной степени нагретости тел. Живые существа способны воспринимать ощущения 
+							тепла и холода непосредственно, с помощью органов чувств.
+							
+							Note:
+							Температура - это физическая величина, характеризующая тепловое состояние тел
+						</script>
+					</section>
+				
+					<!-- Факты о температуре -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							##### Занимательные факты о температуре: 
+	
+							- Самая высокая температура, которую создал человек, составила 4 миллиарда градусов Цельсия.
+							- Самая холодная температура в нашей системе зафиксирована на Луне: всего 30 Кельвинов. Ниже, чем температура Плутона!
+							- Самая низкая температура, которую удалось достичь в искусственных условиях - 100 пикоКельвинов или 0.0000000001 K.
+							- Температура космоса составляет 2,73 Кельвина или около -270 градусов Цельсия.
+							Note:
+							Факты о температуре
+						</script>
+					</section>
+					
+					<!-- Определение длинны -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Длина
+	
+							Длина́  — протяжение линии, плоскости, тела в том направлении, в котором две крайние точки (линии, плоскости, тела) 
+							лежат на некоем расстоянии одна от другой. Предметы измеряются в длину, ширину и высоту. Длина стола, длина линейки и т.д.
+							В международной системе единиц (СИ) за единицу длины принят метр.
+							Note:
+							Длина́  — протяжение линии, плоскости, тела в том направлении, в котором две крайние точки лежат на некоем расстоянии одна от другой.
+							Или проще, это расстояние от одного конца любого предмета до другого конца предмета
+						</script>
+					</section>
+
+					<!-- Факты о длинне -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							##### Занимательные факты о длине: 
+	
+							- Самая старая единица длины – локоть – был единицей измерения у многих народов. Так, локоть это 45 см.
+							- Дюйм - равнялся длине трёх ячменных зёрен, вынутых из средней части колоса.
+							- Cогласно легенде, греческий воин по имени Фидиппид в 490 году до нашей эры после битвы при МАРАФОНЕ пробежал, 
+							не останавливаясь, от Марафона до Афин, чтобы возвестить о победе греков, он успел крикнуть «радуйтесь, афиняне, мы победили! » и умер.
+							Note:
+							Чуть - чуть фактов о длине
+						</script>
+					</section>
+	
+					<!-- Определение массы -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Масса 
+	
+							Масса – физическая величина, одна из основных характеристик материи, определяющая её инерционные и гравитационные свойства.
+							В обыденной жизни и в физике XIX века масса синонимична весу.
+							$$ m = \rho \cdot V$$ 
+							Гравитационная масса показывает, с какой силой тело взаимодействует с внешними полями тяготения.
+							Note:
+							Масса тела - это физическая величина, которая является мерой интертного тела. Массу обозначают буквой m и измеряется она в кг.
+						</script>
+					</section>
+
+					<!-- Факты о массе -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							##### Занимательные факты о массе: 
+	
+							- Самым тяжелым царским головным убором (короной), из когда-либо взвешиваемых, является Шапка Мономаха. Вес составляет 698 грамм.
+							- Инертная масса любого тела равна его гравитационной массе.
+							- Самой тяжелой породой среди домашних собак является сенбернар, 146.6 кг.
+							- Если наполнить чайную ложку веществом, из которого состоят нейтронные звезды, то ее вес будет равняться примерно 110 миллионам тонн!
+							
+							Note:
+							Факты о массе
+						</script>
+					</section>
+
+					<!-- Определение объема -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Объем
+							Объём — количественная характеристика пространства, занимаемого телом или веществом. Объём тела определяется его формой и линейными размерами.
+							Единица объёма в СИ — кубический метр.
+							$$V = \tfrac{m}{\rho}$$ На практике приблизительный объём тела, в том числе сложной формы, можно вычислить по закону Архимеда, погрузив это
+							тело в жидкость.
+					
+							Note:
+							Объем это физическая величина, которая характеризует свойства тел занимать ту или иную часть пространства.
+						</script>
+					</section>
+
+					<!-- Факты об объеме -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+						##### Занимательные факты об объеме: 
+						
+						- Объем воды в Мировом океане составляет 1340740 тыс. км³. Наибольшая глубина 11 022 м.
+						- Объем 1 объема легких кита такой же, что и у 508.333 объемов легких человека.
+						- В древние времена обычно использовали глиняные мерные сосуды для измерения объёма.
+						Note:
+						Интересные факты об объеме
+						</script>
+					</section>
+
+					<!-- Определение площади -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Площадь
+							Площадь - это численная характеристика, которая показывает размер поверхности. Поверхность при этом может быть плоской или криволинейной.
+							Исторически вычисление площади называлось квадратурой. Фигура, имеющая площадь, называется квадрируемой. Фигуры с одинаковой 
+							площадью называются равновеликими.
+					
+							Note:
+							Площадь это величина, которая показывает, Сколько места занимает фигуа на плоскости. Обозначается буквой S
+						</script>
+					</section>
+	
+					<!-- Факты о площади -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+						##### Занимательные факты о площади: 
+						
+						- Если сравнить одинаковые по площади фигуры, окажется, что наименьшим периметром обладает круг. Он же будет наибольшим по площади среди 
+						геометрических фигур с равным периметром.
+						- Первой представительницей слабого пола, решившей, что изучение чисел и фигур – удел не только мужчин, была 
+						Гипатия – гречанка, жившая в Александрии 2,5 тысячелетия назад.
+						- Математический гений сегодняшнего дня – россиянин Григорий Перельман, доказавший гипотезу Пуанкаре.
+						Note:
+						Познавательные факты из площади
+						</script>
+					</section>
+
+					<!-- Определение давления -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Давление
+
+							Давление – это физическая величина, характеризующая интенсивность механического воздействия среды на поверхность тела
+							в направлении, перпендикулярном к этой поверхности. Давление численно равно отношению усредненной перпендикулярной составляющей 
+							силы к величине поверхности.
+							$$p = \tfrac{F}{S}$$
+
+							Note:
+							Давлением называется физическая величина, равная отношению силы, действующей перпендикулярно некоторой поверхности, к площади этой 
+							поверхности. Сила, действующая перпендикулярно некоторой поверхности, называется силой давления
+						</script>
+					</section>
+
+					<!-- Факты о давлении -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+						##### Занимательные факты о давлении: 
+						
+						- Когда ты катаешься на коньках, ты фактически скользишь по тонкому слою только что растаявшей воды, которая расстаяла из-за давления твоего тела на лед.
+						- Сложно поверить, но даже очень стройная модель может испортить пол своими каблуками.
+						- Крупные артерии человека могут выдерживать давление в 20 атмосфер.
+						- Предел Армстронга – это высота над уровнем моря, где давление падает до такой степени, что кровь в человеческом теле закипает (19200 метров над уровнем моря).
+						Note:
+						Факты о давлении соответсвенно
+						</script>
+					</section>
+
+					<!--Конвертер скорости-->
+					<section data-separator-notes="^Note:">
+						<h3>Конвертер скорости</h3>
+						<script>
+							function ras3(){
+								
+								result3.innerHTML = ((v1.value*ed3.value)/v2.value);
+							}
+						</script>
+						<input onkeyup="ras3()" placeholder="0" autocomplete="off" id="ed3" type="text" value="50"/>
+						<select onchange="ras1()" id="v1">
+							<option value="1" id="m">Метров в секунду</option>
+							<option value="0.277778" id="k">Километров в час</option>
+						</select>	
+						<select onchange="ras3()" id="v2">
+							<option value="1" id="m">Метров в секунду</option>
+							<option value="0.277778" id="k">Километров в час</option>
+						</select>
+						<input onmouseup="ras3()" type="button" value="Вычислить"  />
+						<br><span id="result3"></span>
+						<aside class="notes">
+							Программа конвертера скорости
+						</aside>
+					</section>
+					
+					<!--Конвертер температуры-->
+					<section>
+						<h3>Конвертер температуры</h3>
+						<script>
+							
+							function CelsiusConverter(){
+							document.converter.fahrenheit.value = (document.converter.celsius.value * 9 / 5) + 32
+							document.converter.kelvin.value = document.converter.celsius.value * 1 + 273.15
+							}
+							function FahrenheitConverter(){
+							document.converter.celsius.value = (document.converter.fahrenheit.value - 32) * 5 / 9
+							document.converter.kelvin.value=((document.converter.fahrenheit.value - 32)*5/9)+273.15
+							}
+							function KelvinConverter(){
+							document.converter.celsius.value = document.converter.kelvin.value - 273.15
+							document.converter.fahrenheit.value=((document.converter.kelvin.value - 273.15)*9/5)+32
+							}
+							
+							</script>
+						<form name="converter">
+							Цельсия: <input type="text" name="celsius" onChange="CelsiusConverter()"><br />
+							Фаренгейт: <input type="text" name="fahrenheit" onChange="FahrenheitConverter()"><br />
+							Кельвин: <input type="text" name="kelvin" onChange="KelvinConverter()"><br />
+							<input type="button" value="Нажать" />
+						</form>
+						<aside class="notes">
+							Программа конвертера температуры
+						</aside>
+					</section>
+
+					<!--Конвертер длины-->
+					<section>
+						<h3>Конвертер длины</h3>
+						<script>
+							function ras1(){
+								result1.innerHTML = ((d1.value*ed1.value)/d2.value);
+							}
+						</script>
+						<input onkeyup="ras1()" placeholder="0" autocomplete="off" id="ed1" type="text" value="50"/>
+						<select onchange="ras1()" id="d1">
+							<option value="1">Сантиметры</option>
+							<option value="100">Метры</option>
+							<option value="100000">Километры</option>
+							<option value="160934">Мили</option>
+						</select>	
+						<select onchange="ras1()" id="d2">
+							<option value="1">Сантиметры</option>
+							<option value="100">Метры</option>
+							<option value="100000">Километры</option>
+							<option value="160934">Мили</option>
+						</select>
+						<input onmouseup="ras1()" type="button" value="Вычислить"  />
+						<br><span id="result1"></span>
+						<aside class="notes">
+							Конвертер длины
+						</aside>
+					</section>
+					
+					<!--Конвертер массы-->
+					<section>
+						<h3>Конвертер массы</h3>
+						<script>
+						function ras(){
+							result.innerHTML = ((m1.value*ed.value)/m2.value);
+						}
+						</script>
+						<input onkeyup="ras()" placeholder="0" autocomplete="off" id="ed" type="text" value="50"/>
+						<select onchange="ras()" id="m1">
+							<option value="1">Граммы</option>
+							<option value="1000">Килограммы</option>
+							<option value="1000000">Тонны</option>
+							<option value="16380">Пуды</option>
+						</select>	
+						<select onchange="ras()" id="m2">
+							<option value="1">Граммы</option>
+							<option value="1000">Килограммы</option>
+							<option value="1000000">Тонны</option>
+							<option value="16380">Пуды</option>
+						</select>
+						<input onmouseup="ras()" type="button" value="Вычислить"  />
+						<br><span id="result"></span>
+						<aside class="notes">
+							Программа по конвертации массы
+						</aside>
+					</section>
+					
+					<!--Конвертер площади-->
+					<section>
+						<h3>Конвертер площади</h3>
+						<script>
+						function ras2(){
+							result2.innerHTML = ((p1.value*ed2.value)/p2.value);
+						}
+						</script>
+						<input onkeyup="ras2()" placeholder="0" autocomplete="off" id="ed2" type="text" value="50"/>
+						<select onchange="ras2()" id="p1">
+							<option value="1">Кв. метры</option>
+							<option value="10000">Гектар</option>
+							<option value="1000000">Кв. километры</option>
+						</select>	
+						<select onchange="ras2()" id="p2">
+							<option value="1">Кв. метры</option>
+							<option value="10000">Гектар</option>
+							<option value="1000000">Кв. километры</option>
+						</select>
+						<input onmouseup="ras2()" type="button" value="Вычислить"  />
+						<br><span id="result2"></span>
+						<aside class="notes">
+							Конвертер площади
+						</aside>
+					</section>
+					
+					<!--Конвертер объема-->
+					<section>
+						<h3>Конвертер объема</h3>
+						<script>
+						function ras4(){
+							result4.innerHTML = ((o2.value*ed4.value)/o1.value);
+						}
+						</script>
+						<input onkeyup="ras4()" placeholder="0" autocomplete="off" id="ed4" type="text" value="50"/>
+						<select onchange="ras4()" id="o1">
+							<option value="1">Кубический метр</option>
+							<option value="6.29">Баррель</option>
+							<option value="1000">Литр</option>
+							<option value="4167">Стакан</option>
+						</select>	
+						<select onchange="ras4()" id="o2">
+							<option value="1">Кубический метр</option>
+							<option value="6.29">Баррель</option>
+							<option value="1000">Литр</option>
+							<option value="4167">Стакан</option>
+						</select>
+						<input onmouseup="ras4()" type="button" value="Вычислить"  />
+						<br><span id="result4"></span>
+						<aside class="notes">
+							Программа по конвертированию объема
+						</aside>
+					</section>
+					
+					<!--Конвертер давления-->
+					<section>
+						<h3>Конвертер давления</h3>
+						<script>
+						function ras5(){
+							result5.innerHTML = ((da2.value*ed5.value)/da1.value);
+						}
+						</script>
+						<input onkeyup="ras5()" placeholder="0" autocomplete="off" id="ed5" type="text" value="50"/>
+						<select onchange="ras5()" id="da1">
+							<option value="1">Бар</option>
+							<option value="100000">Паскаль</option>
+							<option value="0.986923">Атмосферное давление</option>
+						</select>	
+						<select onchange="ras5()" id="da2">
+							<option value="1">Бар</option>
+							<option value="100000">Паскаль</option>
+							<option value="0.986923">Атмосферное давление</option>
+						</select>
+						<input onmouseup="ras5()" type="button" value="Вычислить"  />
+						<br><span id="result5"></span>
+						<aside class="notes">
+							Программа конвертера давления
+						</aside>
+					</section>
+
+					<!-- Пример задачи на расстояние -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Примеры задач на скорость, время, расстояние
+							Задача 1. Машина двигается со скоростью 80 км/ч. Сколько километров он проедет за 3 часа?\
+							\
+							В данном примере нужно найти расстояние, которое считается по формуле $S=V \cdot t$. $V= 80, t=3$\
+							$80 \cdot 3 = 240 км.$
+							Note:
+							Пример решения задачи на расстояние
+						</script>
+					</section>
+
+					<!-- Пример залачи на время -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Примеры задач на скорость, время, расстояние
+							Задача 2. Автомобиль за 3 часа проехали 180 км с одной и той же скоростью. Чему равна скорость автомобиля?\
+							\
+							Здесь необходимо расчитать скорость. Скорость находится по формуле $V = \tfrac{S}{t}$, где $t$ время, 3 часа и 
+							расстояние $S$, 180 км.\
+							$V = \tfrac{180}{3} = 60$ километров в час.
+							Note:
+							Пример решения задачи на скорость
+						</script>
+					</section>
+
+					<!-- Пример задачи на скорость -->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Примеры задач на скорость, время, расстояние
+							Задача 3. Вертолет пролетел расстояние в 600 км со скоростью 120 км/ч. Сколько времени он был в полете?\
+							\
+							Что нам дано? Расстояние $S=600км$ и скорость $V=120$км/ч. Нужно найти время, которое ищется по формуле: $t=\tfrac{S}{V}$.
+							Подставляем значения.\
+							$t = \tfrac {600}{120} = 5$ часов
+							Note:
+							Пример решения задачи на время
+						</script>
+					</section>
+
+					<!-- Программа -->
+					<section>
+					<h3>Задачи</h3>
+						<label>Скорость:</label>
+						<input placeholder="V Скорость" autocomplete="off" id="V" type="text"><label>км/ч</label><br>
+						<label>Время:</label>
+						<input placeholder="T Время" autocomplete="off" id="T" type="text"><label>ч</label><br>
+						<label>Расстояние:</label>
+						<input placeholder="S Расстояние" autocomplete="off" id="S" type="text"><label>км</label><br>		
+						<input onClick="raschet()"  autocomplete="off"  value="Рассчитать" type="button">
+						<aside class="notes">
+							Программа, которая считает скорость, время или расстояние при заполнении 2 соответсвующих полей. 3 поле заполняется автоматически
+						</aside>
+					</section>
+					<script>
+					function raschet(){
+						var arr = Array();
+						var q;
+						if(V.value!=''){arr.push('V');}else{q = 'V';}
+						if(T.value!=''){arr.push('T');}else{q = 'T';}
+						if(S.value!=''){arr.push('S');}else{q = 'S';}
+						if(arr.length==2){
+							if(q=='V'){
+								V.value = S.value/T.value;
+							}
+							if(q=='T'){
+								T.value = S.value/V.value;
+							}
+							if(q=='S'){
+								S.value = V.value*T.value;
+							}
+						}
+					}
+					</script>
+					
+					<!--Название слайда-->
+					<section class="center" data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							 # Исходный код программ
+	
+							Note:
+							Заголовок
+						</script>
+					</section>
+
+					<!--Исходный код, слайд-->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Исходный код расчета времени, скорости и расстояния
+							```
+							function raschet(){
+								var arr = Array();
+								var q;
+								if(V.value!=''){arr.push('V');}else{q = 'V';}
+								if(T.value!=''){arr.push('T');}else{q = 'T';}
+								if(S.value!=''){arr.push('S');}else{q = 'S';}
+								if(arr.length==2){
+									if(q=='V'){
+										V.value = S.value/T.value;
+									}
+									if(q=='T'){
+										T.value = S.value/V.value;
+									}
+									if(q=='S'){
+										S.value = V.value*T.value;
+									}
+								}
+							}
+							```
+							Note:
+							Исходный код программы расчета времени, скорости и расстояния
+						</script>
+					</section>
+
+					<!--Пояснение программы на слайде-->
+					<section class="center" data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							 ### Что программа делает и как ей пользоваться
+							 
+							У вас на экране 3 поля: скорость, время, расстояние. При заполнении 2 из 3 полей, 3 считается автоматически.\
+							Т.е, если Вам нужно найти расстояние, то вы пишите значения в скорость и время.\
+							С остальными значениями аналогично.
+							Note:
+							Объяснение, как пользоваться программой по расчету времени, скорости и расстояния
+						</script>
+					</section>
+
+					<!--Исходный код конвертера, слайд-->
+					<section data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							### Исходный код конвертера массы
+							```
+								function ras(){
+									result.innerHTML = ((m1.value*ed.value)/m2.value);
+								}
+							```
+							Note:
+							Код конвертера массы
+						</script>
+					</section>
+
+					<!--Пояснение программы на слайде-->
+					<section class="center" data-markdown  data-separator-notes="^Note:">
+						<script type="text/template">
+							 ### Что программа делает и как ей пользоваться
+							 
+							Пишем любое значение в соответсвующее поле. Далее у нас есть 2 списка. В первом: что хотим конвертировать. 
+							Во втором: во что хотим конвертировать. После введенных значений ответ мы получаем ответ.
+							Note:
+							Пояснение, как пользоваться программами по конвертации
+						</script>
+					</section>
+
+					<!--Веселые картинки-->
+					<section
+						data-background-image="image/мэм.jpg"
+						data-background-size="contain"
+						data-menu-title="мэм"
+					></section>
+				<section data-menu-title="Лучи">
+					<img src="image/лучи.png" alt="лучи">
+				</section>
+					<section data-menu-title="Добрыня">
+						<img src="image/шарики.png" alt="добрыня">
+					</section>
+					<section
+				data-background-image="image/прога.jpg"
+				data-menu-title="прога"
+				></section>
+				<section
+				data-background-image="image/физика.jpg"
+				data-menu-title="физика"
+				></section>
+				
+				<!--Финальный, заключительный слайд-->
+				<section data-menu-title="Заключительный слайд" class="center" data-markdown  data-separator-notes="^Note:">
+					<script type="text/template">
+						Спасибо за внимание
+					</script>
+
+					
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="js/algebrite.bundle-for-browser.js"></script>
+		<script src="js/math.js"></script>
+		<script src="js/plotly-2.6.3.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+		<script src="https://city.9pr.ru/socket.io/socket.io.js"></script>
+
+		<script>
+			Reveal.initialize({
+				hash: true, // данная настройка позволит после перезагрузки презентации вернутся к последнему открытому слайду
+				center: false, //Привязываем вверх слайда к верху экрана
+				slideNumber: true, //Показываем номер страницы
+				controls: true, //Разрешаем управлять презентацией с помощью клавиатуры
+				//Так как меню старый плагин, загружаем его старым методом
+				dependencies: [
+					{
+						src: 'plugin/menu/menu.js'
+					},
+				],
+				//Настраиваем меню, показывая номер слайда и маркер пройденных слайдов
+				menu : {
+					numbers: true,
+					markers: true, 
+				},
+				//Дополнительно подключим KaTeX
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+			});
+		</script>
+		<script>
+			//Здесь был конвертер
+		</script>
+		
+	</body>
+</html>
